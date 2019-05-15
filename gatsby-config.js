@@ -1,17 +1,14 @@
-const config = require('./config/website')
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
-
 module.exports = {
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
-    title: config.siteTitle,
-    twitterHandle: config.twitterHandle,
-    description: config.siteDescription,
+    siteUrl: 'https://your-site.io' + '/',
+    title: 'My Blog',
+    twitterHandle: '@eggheadio',
+    description: 'This is where they post things!',
     keywords: ['Video Blogger'],
-    canonicalUrl: config.siteUrl,
-    image: config.siteLogo,
+    canonicalUrl: 'https://your-site.io',
+    image: 'images/logo.png', // Used for SEO and manifest, path to your image you placed in the 'static' folder
     author: {
-      name: config.author,
+      name: 'Author',
       minibio: `
         <strong>egghead</strong> is the premier place on the internet for
         experienced developers to enhance their skills and stay current
@@ -19,15 +16,15 @@ module.exports = {
       `,
     },
     organization: {
-      name: config.organization,
-      url: config.siteUrl,
-      logo: config.siteLogo,
+      name: 'egghead.io LLC',
+      url: 'https://your-site.io',
+      logo: 'images/logo.png',
     },
     social: {
-      twitter: config.twitterHandle,
-      twitterUrl: config.twitter,
-      githubUrl: config.github,
-      linkedinUrl: config.linkedin,
+      twitter: '@eggheadio',
+      twitterUrl: 'https://twitter.com/eggheadio/',
+      githubUrl: 'eggheadio',
+      linkedinUrl: '',
       fbAppID: '',
     },
   },
