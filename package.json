@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "starter",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@eggheadio/gatsby-theme-egghead-blog": "*",
+    "gatsby": "latest",
+    "gatsby-plugin-manifest": "^2.0.13",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
